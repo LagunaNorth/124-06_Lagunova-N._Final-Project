@@ -27,7 +27,7 @@ def register_callbacks (app):
     def update_graphs(provider, numbersOfAS): 
 
         seg_counts = df['сегмент рынка'].value_counts() 
-        for_others = 5 
+        for_others = 10 
         other_seg = seg_counts[seg_counts < for_others].index 
         mapping = {cat: 'Прочие' for cat in other_seg} 
         df['сегменты рынка'] = df['сегмент рынка'].map(mapping).fillna(df['сегмент рынка'])
@@ -73,8 +73,6 @@ def register_callbacks (app):
             yaxis=dict(title_font_size=ps.GRAPH_FONT_SIZE, tickfont=dict(size=ps.GRAPH_FONT_SIZE)),
             plot_bgcolor=ps.PLOT_BACKGROUND_COLOR,
             paper_bgcolor=ps.PAPER_BACKGROUND_COLOR,
-            height=580, 
-            autosize=False
         )
 
         business_fig = go.Figure()
@@ -139,3 +137,4 @@ def register_callbacks (app):
         ])
         
         return market_fig, business_fig, customers_hist, card_companies, card_b2o, card_custom, table
+
