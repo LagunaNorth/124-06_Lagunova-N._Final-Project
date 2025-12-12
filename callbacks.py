@@ -137,4 +137,3 @@ def register_callbacks (app):
         ])
         
         return market_fig, business_fig, customers_hist, card_companies, card_b2o, card_custom, table
-
