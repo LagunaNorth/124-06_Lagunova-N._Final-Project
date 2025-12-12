@@ -94,8 +94,9 @@ body {
     background-color: #f7fdfa;
     padding: 20px;
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 11px;
     box-shadow: 0 4px 6px rgba(249,112,37, 0.8);
     font-size: 20px;
     color: #5b55c1;
+
 }
