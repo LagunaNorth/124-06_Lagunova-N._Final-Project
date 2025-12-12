@@ -49,4 +49,5 @@ def create_layout ():
         ]),
 
         html.Div(id='table', className='contacts')
-], fluid=True)
+
+], fluid=True) 
